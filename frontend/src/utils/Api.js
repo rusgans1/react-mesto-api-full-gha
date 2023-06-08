@@ -80,7 +80,7 @@ class Api {
 }
 
 const api = new Api({
-  url: "",
+  url: "https://mesto.petrov.nomoredomains.rocks",
   credentials: "include",
   headers: {
     "Content-Type": "application/json",
