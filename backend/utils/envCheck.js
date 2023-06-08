@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const YOUR_JWT = '';
+const YOUR_JWT = '86e9169ad92bc19b02edda92010aed188792b138d5361e9eecbb7cf14f8cd865';
 const SECRET_KEY_DEV = 'dev-secret';
 try {
   // eslint-disable-next-line no-unused-vars
