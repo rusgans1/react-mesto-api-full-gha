@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const rateLimit = require('express-rate-limit');
 const { errors } = require('celebrate');
+const { limiter } = require('./middlewares/rate-limiter');
 const { loginUser, createUser, logOut } = require('./controller/users');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { userValidation, loginValidation } = require('./middlewares/validation');
@@ -47,9 +47,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(helmet());
 app.use(cookieParser());
-app.use(rateLimit());
 
 app.use(requestLogger);
+app.use(limiter);
 
 app.get('/crash-test', () => {
   setTimeout(() => {
