@@ -19,8 +19,8 @@ const { PORT = 3000 } = process.env;
 const app = express();
 
 const allowedCors = [
-  'http://api.mesto.petrov.nomoredomains.rocks',
-  'https://api.mesto.petrov.nomoredomains.rocks',
+  'http://mesto.petrov.nomoredomains.rocks',
+  'https://mesto.petrov.nomoredomains.rocks',
   'localhost:3000',
 ];
 
