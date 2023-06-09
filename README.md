@@ -23,6 +23,6 @@ MongoDB
 
 IP-адрес 158.160.112.90
 
-Frontend https://...
+Frontend https://api.mesto.petrov.nomoredomains.rocks
 
-Backend https://...
+Backend https://mesto.petrov.nomoredomains.rocks
